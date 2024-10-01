@@ -1,0 +1,113 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  height: 110vh;
+  width: 100%;
+  background-color: #415bd4;
+}
+
+body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.learn-lang {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: -120px;
+  color: white;
+  width: 95%;
+  margin: auto;
+  padding-top: 8px;
+  text-align: center;
+  border-radius: 5px;
+  /* padding-left: 8px; */
+}
+.my-card {
+  height: 320px;
+  transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.my-card img {
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out; /* Smooth scaling */
+}
+
+.start-chat {
+  position: relative;
+  top: -90px;
+  padding: 8px 0;
+  background-color: rgba(251, 251, 251, 0.5);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for color */
+}
+
+.my-card:hover {
+  cursor: pointer;
+  border: 4px solid #415bd4; /* Border changes smoothly */
+}
+
+.my-card:hover img {
+  transform: scale(1.1); /* Scale image when the card is hovered */
+}
+
+.my-card:hover .start-chat {
+  background-color: #415bd4; /* Change background color on hover */
+  color: black; /* Change text color */
+}
+.languages {
+  height: 100px;
+  width: 250px;
+  border: 2px solid #415bd4;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f4ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  margin: 20px; /* Adds spacing between the boxes */
+  transform-origin: center; /* Ensures scaling happens from the center */
+}
+
+.languages:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  border-color: #ff5722;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.languages p {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0;
+}
+
+.custom-hr {
+  width: 100px;
+  height: 8px;
+  background-color: #415bd4;
+}
+
+.new-line-text {
+  white-space: pre-line;
+}
+
+.custom-bg {
+  background-color: #f9f9f9;
+}
+
+.mobile {
+  width: 500px;
+  margin-top: 44px;
+}
+
+#last-img {
+  height: 50vh;
+  width: 100%;
+  background-image: url("https://www.hellotalk.com/_next/static/media/blueSharpBg.49b54161.webp?width=1920&quality=75");
+  background-size: cover;
+}
